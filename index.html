@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+    <title>Meu Portfólio</title> <!-- Título da aba do navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Ícones Font Awesome -->
+</head>
+<body>
+    <!-- Navegação principal -->
+    <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i> <!-- Ícone de hambúrguer para menu responsivo -->
+        </button>
+        <ul>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Seção de destaque (banner) -->
+        <section id="hero">
+            <div class="hero-container">
+                <img src="images/banner.png" alt="Banner do portfólio" class="hero-image"> <!-- Imagem principal -->
+            </div>
+        </section>
+
+        <!-- Seção "Sobre mim" -->
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>Sou militar e atuo no CAPS, onde trabalho com estatísticas para apoiar decisões e otimizar processos. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na Unicesumar, pois acredito que a tecnologia é uma poderosa aliada na busca por soluções práticas para o dia a dia. Meu objetivo é participar do desenvolvimento de sistemas inteligentes que apoiem a segurança pública e contribuam para salvar vidas — unindo minha experiência na área militar com o potencial transformador da inovação. Sou apaixonada por aprender coisas novas, por livros, esportes e, claro, pelos meus gatos.</p>
+        </section>
+
+        <!-- Seção de tecnologias -->
+        <section id="tecnologias">
+            <h2>Tecnologias</h2>
+            <p>Estas são algumas das tecnologias que conheço ou que estou estudando:</p>
+            <div class="tecnologias-grid">
+                <!-- Ícones das tecnologias -->
+                <img src="images/html5.svg" alt="HTML5" title="HTML5">
+                <img src="images/css.svg" alt="CSS3" title="CSS3">
+                <img src="images/javascript.svg" alt="JavaScript" title="JavaScript">
+                
+            </div>
+        </section>
+
+        <!-- Seção de projetos -->
+        <section id="projetos">
+            <h2>Projetos</h2>
+
+            <!-- Projeto 1 -->
+            <div class="projeto">
+                <img src="images/projeto1.png" alt="Projeto 1" class="projeto-imagem">
+                <div class="projeto-texto">
+                    <h3>Agendamento de Salas</h3>
+                    <p>Este projeto permite o agendamento de salas utilizando o googleSheet integrado ao Google Apps Script. Ao preencher um formulário no googleSheet ), o script verifica conflitos de horário e registra automaticamente os blocos de agendamento.</p>
+                    <a href="https://github.com/CassiaMiyazaki/sala-agendamentos.git" target="_blank">Ver projeto</a>
+                </div>
+            </div>
+
+           
+        </section>
+
+        <!-- Seção adicional: Código Rosa -->
+        <section id="codigo-rosa">
+            <h2>outros</h2>
+            <div class="projeto">
+                <img src="images/codigorosa.png" Projeto Código Rosa" class="projeto-imagem"> <!-- Nome da imagem está correto mas com sintaxe HTML incompleta -->
+                <div class="projeto-texto">
+                    <h3>Código Rosa</h3>
+                    <p>O Código Rosa é um projeto voluntário criado para incentivar meninas e mulheres a entrarem na área da tecnologia por meio de eventos, oficinas e mentoria.</p>
+                    <a href="https://linktr.ee/thecodigorosa" target="_blank">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="social-icons">
+                <!-- Links para redes sociais e meios de contato -->
+                <a href="https://github.com/CassiaMiyazaki" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/cassia-helena-miyazaki-nicoletti-frois-57427a253" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:miyazakinicoletti@gmail.com?subject=Contato%20do%20site&body=Olá%2C%20meu%20nome%20é%20[Seu%20Nome]%20e%20gostaria%20de%20entrar%20em%20contato." aria-label="Email">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://wa.me/5511984957072" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Cassia Helena Miyazaki Nicoletti Frois</p>
+    </footer>
+
+    <!-- JavaScript externo -->
+    <script src="script.js"></script>
+
+    <!-- Modal com email -->
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span> <!-- Botão para fechar o modal -->
+            <h2>Meu Email</h2>
+            <p>deboralorrayne23@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>
